@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Trouw Caroline en Kasper</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
+        <div class="col-xs-12">
       
-        <h1 class="text-center">We would like to welcome you to our wedding!</h1>
-        <p class="lead">We will get married on the 13th of August. To further arrange our wedding and to send you our inviation, we would like you to fill in some details:</p>
-        
+          <h1>We would like to welcome you to our wedding!</h1>
+          <p class="lead">We will get married on the 13th of August. To further arrange our wedding and to send you our inviation, we would like you to fill in some details:</p>
+
                  <form action="action_page.php" method="post" target="_blank" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
                     <!-- Name and email -->
                     <div class="form-group">
@@ -45,7 +46,7 @@
                     </div>
                     <!-- Question vegetarians -->
                     <div class="form-group">
-                        <span id="helpBlock" class="help-block">Are you vegeratian?</span>
+                        <label class="control-label">Are you vegetarian</label>
                         <div class="radio">
                           <label>
                             <input type="radio" name="question_veggie" id="question_veggie_ans_1" value="no" checked>
@@ -67,7 +68,7 @@
                     </div>
                     <!-- Question statistics -->
                     <div class="form-group">
-                        <span id="helpBlock" class="help-block">Do you like to talk about statistics and computers</span>
+                        <label class="control-label">Do you like to talk about statistics and computers</label>
                         <div class="radio">
                           <label>
                             <input type="radio" name="question_statistics" id="question_statistics_ans_1" value="hate_it" checked>
@@ -89,7 +90,7 @@
                     </div>
                     <!-- Question drinks -->
                     <div class="form-group">
-                        <span id="helpBlock" class="help-block">What is your favourite drink alongside a diner</span>
+                       <label class="control-label">What is your favourite drink alongside a diner</label>
                         <div class="radio">
                           <label>
                             <input type="radio" name="question_drinks" id="question_drinks_ans_1" value="red_wine" checked>
@@ -125,15 +126,9 @@
                     <div class="form-group">
                         <button type="submit" class="btn btn-default">Submit</button>
                     </div>
-          <!--           Number of vegeterians<br>
-                    <input type="radio" name="gender" value="male" checked>None<br>
-                    <input type="radio" name="gender" value="female">One of us<br>
-                    <input type="radio" name="gender" value="other">None of us<br>
-
-
-                    <input type="submit" value="Submit"> -->
                     
                 </form>
+            </div>
       </div>
     </div>
   </body>
