@@ -80,6 +80,23 @@
     		margin-right: auto;
     		margin-top:1em;
 		}
+    #spinning_wheel {
+        position: absolute;
+        zindex: 9999;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+        background-color:rgba(0,0,0,0.1);
+        display: none;
+    }
+
+    #spinning_wheel .spinner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
 		
 	</style>
 
@@ -88,6 +105,10 @@
 <body>
 
 <div id="screen">
+  <div id="spinning_wheel">
+    <div class="spinner"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></div>
+  </div>
+
 	<img src="GIF/uitnodiging_red.gif" id="opening_gif">
 	<div id="div_language_buttons" >
 		<span class="button h1" id="NL_button">NL</span>
@@ -177,39 +198,40 @@
 </body>
 
 <script>
-	setTimeout(function() {
+  $(window).load(function() {
+      $('#spinning_wheel').hide()
 
-		$('#div_language_buttons').show()
+    	setTimeout(function() {
 
-  		$("#FR_button").click(function(){
-  			$('#div_language_buttons').hide()
-  			$('#opening_gif').hide()
-  			$('#main_content_FR').show()
-  		})
-		$("#NL_button").click(function(){
-			$('#div_language_buttons').hide()
-			$('#opening_gif').hide()
-			$('#main_content_NL').show()
-		})
-		$("#button_NL_locatie").click(function(){
-			$('#tekst_locatie').show()
-			$('#tekst_overnachting').hide()
-			$('#tekst_cadeautip').hide()
-		})
-		$("#button_NL_overnachting").click(function(){
-			$('#tekst_locatie').hide()
-			$('#tekst_overnachting').show()
-			$('#tekst_cadeautip').hide()
-		})
-		$("#button_NL_cadeautip").click(function(){
-			$('#tekst_locatie').hide()
-			$('#tekst_overnachting').hide()
-			$('#tekst_cadeautip').show()
-		})
+    		$('#div_language_buttons').show()
 
-		
-
-	}, 5000);
+      		$("#FR_button").click(function(){
+      			$('#div_language_buttons').hide()
+      			$('#opening_gif').hide()
+      			$('#main_content_FR').show()
+      		})
+    		$("#NL_button").click(function(){
+    			$('#div_language_buttons').hide()
+    			$('#opening_gif').hide()
+    			$('#main_content_NL').show()
+    		})
+    		$("#button_NL_locatie").click(function(){
+    			$('#tekst_locatie').show()
+    			$('#tekst_overnachting').hide()
+    			$('#tekst_cadeautip').hide()
+    		})
+    		$("#button_NL_overnachting").click(function(){
+    			$('#tekst_locatie').hide()
+    			$('#tekst_overnachting').show()
+    			$('#tekst_cadeautip').hide()
+    		})
+    		$("#button_NL_cadeautip").click(function(){
+    			$('#tekst_locatie').hide()
+    			$('#tekst_overnachting').hide()
+    			$('#tekst_cadeautip').show()
+    		})
+	   }, 5000);
+  });
 
 
 </script>
