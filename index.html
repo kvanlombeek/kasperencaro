@@ -108,6 +108,7 @@
     		margin-top:1em;
 		}
     #spinning_wheel {
+        position: absolute;
         zindex: 9999;
         top:0;
         left:0;
@@ -245,7 +246,7 @@
 </body>
 
 <script>
-  $('#opening_gif').load(function() {
+  $(window).load(function() {
       $('#spinning_wheel').hide()
 
     	setTimeout(function() {
