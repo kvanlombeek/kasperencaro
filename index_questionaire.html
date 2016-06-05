@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Trouw Caroline en Kasper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+      body{
+        color:#1C445A;
+        background-color:rgba(226, 187, 11,0.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12" id="question_form">
+      
+          <h1>We would like to welcome you to our wedding!</h1>
+          <p class="lead">We will get married on the 13th of August. To further arrange our wedding and to send you our invitation, we would like you to fill in some details:</p>
+
+                 <form autocomplete="off" accept-charset="UTF-8"  enctype="application/x-www-form-urlencoded" novalidate>
+                    <!-- Name and email -->
+                    <div class="form-group">
+                      <label for="name" class="control-label">Your name</label>
+                        <input type="email" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="email" class="control-label">Your email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <!-- Name and email partner -->
+                    <div class="form-group">
+                      <label for="partner_name" class="control-label">Your partners name</label>
+                        <input type="email" class="form-control" id="partner_name" placeholder="Name">
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="partner_email" class="control-label">Your partners email</label>
+                        <input type="email" class="form-control" id="partner_email" placeholder="Email">
+                    </div>
+                    <!-- Address -->
+                    <div class="form-group">
+                      <label for="address" class="control-label">Your address</label>
+                        <input type="email" class="form-control" id="address" placeholder="Address">
+                    </div>
+                    <!-- Question vegetarians -->
+                    <div class="form-group">
+                        <label class="control-label">Are you vegetarian</label>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="question_veggie" id="question_veggie_ans_1" value="no" checked>
+                            No
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="question_veggie" id="question_veggie_ans_2" value="one_of_us">
+                            One of us
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="question_veggie" id="question_veggie_ans_3" value="both">
+                            Both
+                          </label>
+                        </div>
+                    </div>
+                    <!-- Question statistics -->
+                    <div class="form-group">
+                        <label class="control-label">Do you like to talk about statistics and computers</label>
+                        <div class="radio disabled">
+                          <label>
+                            <input type="radio" name="question_statistics" id="question_statistics_ans_1" value="hate_it" disabled>
+                            I hate it.
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="question_statistics" id="question_statistics_ans_2" value="5_minutes" checked>
+                            I can stand it for 10 minutes
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="question_statistics" id="question_statistics_ans_3" value="yes_please">
+                            I actually like it
+                          </label>
+                        </div>
+                    </div>
+                    <!-- Question drinks -->
+                    <div class="form-group">
+                       <label class="control-label">What is your favourite drink alongside a diner?</label>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="question_drinks" id="question_drinks_ans_1" value="red_wine" checked>
+                            Red wine
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="question_drinks" id="question_drinks_ans_2" value="white_wine">
+                            White wine
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="question_drinks" id="question_drinks_ans_3" value="blond_beer">
+                            Blond beer
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="question_drinks" id="question_drinks_ans_4" value="dark_beer">
+                            Dark beer
+                          </label>
+                        </div>
+                    </div>
+
+                    <!-- Which musician should we play the most -->
+                    <div class="form-group">
+                       <label class="control-label">Which musician should we play the most?</label>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="question_music" id="question_music_ans_2" value="cole" checked>
+                            Nat King Cole
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="question_music" id="question_music_ans_4" value="neil_young">
+                            Neil Young
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="question_music" id="question_music_ans_6" value="holden">
+                            James holden
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="question_music" id="question_music_ans_7" value="bart_kael">
+                            Bart Ka&euml;l
+                          </label>
+                        </div>
+                    </div>
+
+                    <!-- Other suggestions -->
+                    <div class="form-group">
+                      <label for="suggestions" class="control-label">Other suggestions</label>
+                      <textarea id="suggestions" class="form-control" rows="3"></textarea>
+                    </div>
+                    <!-- Submit buttion -->
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                    
+                </form>
+            </div>
+
+            <div class="col-xs-12" id="something_wrong" style="display: none">
+              <br>
+              <br>
+              <h1 class="text-center">Oeps!</h1>
+              <p class="text-center">Something went wrong, please inform us on kasperencaroline@gmail.com</p> 
+            </div>
+
+            <div class="col-xs-12" id="thank_you" style="display: none">
+              <br>
+              <br>
+              <h1 class="text-center">Thank you!</h1>
+              <p class="text-center">And see you on the 13th of August</p> 
+            </div>
+
+      </div>
+    </div>
+  </body>
+  <script>
+    $(document).ajaxError(function(e, xhr, opt){
+        console.log("Error requesting " + opt.url + ": " + xhr.status + " " + xhr.statusText);
+        $('#question_form').hide(duration = 0, complete = function(){
+            $('#something_wrong').show(duration = 0)
+        })
+    });
+  $( "form" ).submit(function( event ) {
+    event.preventDefault();
+    entry = {'name':$('#name').val(),
+             'email':$('#email').val(),
+             'partner_name':$('#partner_name').val(),
+             'partner_email':$('#partner_email').val(),
+             'address':$('#address').val(),
+             'question_veggie': $('input[name=question_veggie]:checked', 'form').val(),
+             'question_statistics': $('input[name=question_statistics]:checked', 'form').val(),
+             'question_drinks': $('input[name=question_drinks]:checked', 'form').val(),
+             'question_music': $('input[name=question_music]:checked', 'form').val(),
+             'suggestions':$('#suggestions').val()
+           }
+    console.log(entry)
+
+    $.ajax({
+      data :entry,
+      contentType : 'application/x-www-form-urlencoded',
+      type:'post',
+      url: 'http://128.199.53.35:5000/store_results',
+      success: function(return_string){
+        if(return_string == 'success'){
+          $('#question_form').hide(duration = 0, complete = function(){
+            $('#thank_you').show(duration = 0)
+          })
+        }else{
+          $('#question_form').hide(duration = 0, complete = function(){
+            $('#something_wrong').show(duration = 0)
+          })
+        }
+      }
+    })
+  });
+  </script>
+</html>

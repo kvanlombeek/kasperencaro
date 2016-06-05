@@ -1,225 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Trouw Caroline en Kasper</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <style>
-      body{
-        color:#1C445A;
-        background-color:rgba(226, 187, 11,0.1);
-      }
-    </style>
-  </head>
+<head>
 
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12" id="question_form">
-      
-          <h1>We would like to welcome you to our wedding!</h1>
-          <p class="lead">We will get married on the 13th of August. To further arrange our wedding and to send you our inviation, we would like you to fill in some details:</p>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-                 <form autocomplete="off" accept-charset="UTF-8"  enctype="application/x-www-form-urlencoded" novalidate>
-                    <!-- Name and email -->
-                    <div class="form-group">
-                      <label for="name" class="control-label">Your name</label>
-                        <input type="email" class="form-control" id="name" placeholder="Name">
-                    </div>
-                    
-                    <div class="form-group">
-                      <label for="email" class="control-label">Your email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Email">
-                    </div>
-                    <!-- Name and email partner -->
-                    <div class="form-group">
-                      <label for="partner_name" class="control-label">Your partners name</label>
-                        <input type="email" class="form-control" id="partner_name" placeholder="Name">
-                    </div>
-                    
-                    <div class="form-group">
-                      <label for="partner_email" class="control-label">Your partners email</label>
-                        <input type="email" class="form-control" id="partner_email" placeholder="Email">
-                    </div>
-                    <!-- Address -->
-                    <div class="form-group">
-                      <label for="address" class="control-label">Your address</label>
-                        <input type="email" class="form-control" id="address" placeholder="Address">
-                    </div>
-                    <!-- Question vegetarians -->
-                    <div class="form-group">
-                        <label class="control-label">Are you vegetarian</label>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="question_veggie" id="question_veggie_ans_1" value="no" checked>
-                            No
-                          </label>
-                        </div>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="question_veggie" id="question_veggie_ans_2" value="one_of_us">
-                            One of us
-                          </label>
-                        </div>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="question_veggie" id="question_veggie_ans_3" value="both">
-                            Both
-                          </label>
-                        </div>
-                    </div>
-                    <!-- Question statistics -->
-                    <div class="form-group">
-                        <label class="control-label">Do you like to talk about statistics and computers</label>
-                        <div class="radio disabled">
-                          <label>
-                            <input type="radio" name="question_statistics" id="question_statistics_ans_1" value="hate_it" disabled>
-                            I hate it.
-                          </label>
-                        </div>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="question_statistics" id="question_statistics_ans_2" value="5_minutes" checked>
-                            I can stand it for 10 minutes
-                          </label>
-                        </div>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="question_statistics" id="question_statistics_ans_3" value="yes_please">
-                            I actually like it
-                          </label>
-                        </div>
-                    </div>
-                    <!-- Question drinks -->
-                    <div class="form-group">
-                       <label class="control-label">What is your favourite drink alongside a diner?</label>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="question_drinks" id="question_drinks_ans_1" value="red_wine" checked>
-                            Red wine
-                          </label>
-                        </div>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="question_drinks" id="question_drinks_ans_2" value="white_wine">
-                            White wine
-                          </label>
-                        </div>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="question_drinks" id="question_drinks_ans_3" value="blond_beer">
-                            Blond beer
-                          </label>
-                        </div>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="question_drinks" id="question_drinks_ans_4" value="dark_beer">
-                            Dark beer
-                          </label>
-                        </div>
-                    </div>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-                    <!-- Which musician should we play the most -->
-                    <div class="form-group">
-                       <label class="control-label">Which musician should we play the most?</label>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="question_music" id="question_music_ans_2" value="cole" checked>
-                            Nat King Cole
-                          </label>
-                        </div>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="question_music" id="question_music_ans_4" value="neil_young">
-                            Neil Young
-                          </label>
-                        </div>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="question_music" id="question_music_ans_6" value="holden">
-                            James holden
-                          </label>
-                        </div>
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="question_music" id="question_music_ans_7" value="bart_kael">
-                            Bart Ka&euml;l
-                          </label>
-                        </div>
-                    </div>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
-                    <!-- Other suggestions -->
-                    <div class="form-group">
-                      <label for="suggestions" class="control-label">Other suggestions</label>
-                      <textarea id="suggestions" class="form-control" rows="3"></textarea>
-                    </div>
-                    <!-- Submit buttion -->
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </div>
-                    
-                </form>
-            </div>
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-            <div class="col-xs-12" id="something_wrong" style="display: none">
-              <br>
-              <br>
-              <h1 class="text-center">Oeps!</h1>
-              <p class="text-center">Something went wrong, please inform us on kasperencaroline@gmail.com</p> 
-            </div>
+	<!-- Roboto font -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 
-            <div class="col-xs-12" id="thank_you" style="display: none">
-              <br>
-              <br>
-              <h1 class="text-center">Thank you!</h1>
-              <p class="text-center">And see you on the 13th of August</p> 
-            </div>
+	<style>
+		body{
+			color:#1C445A;
+        	background-color:rgba(226, 187, 11,0.1);
+        	font-family: 'Roboto', sans-serif;
+        	font-weight: 300;
+		}
+		#screen{
+			height:100vh;
+/*			background-color: red;
+*/		}
+		#opening_gif{
+			display:block;
+    		max-width: 100%;  
+    		max-height: 100%;
+    		margin-left: auto;
+    		margin-right: auto;
+		}
+		#div_language_buttons{
+			display: none;
+			position:absolute;
+			right:5vw;
+			top:5vh;
+		}
+		.language_button{
+			margin:10px;
+			color:#1C445A;
+		}
+		.button:hover{
+    		text-decoration: underline;
+		}
+		#main_content_NL{
+			display:none;
+		}
+			#main_content_NL h1{
+				text-align: center;
+				margin-bottom: 1em;
+			}
+			#main_content_NL h2{
+				text-align: center;
+				margin-bottom: 1em;
+			}
+			#main_content_NL #tekst_locatie{
+				display:none;
+			}
+			#main_content_NL #tekst_overnachting{
+				display:none;
+			}
+			#main_content_NL #tekst_cadeautip{
+				display:none;
+			}
 
-      </div>
-    </div>
-  </body>
-  <script>
-    $(document).ajaxError(function(e, xhr, opt){
-        console.log("Error requesting " + opt.url + ": " + xhr.status + " " + xhr.statusText);
-        $('#question_form').hide(duration = 0, complete = function(){
-            $('#something_wrong').show(duration = 0)
-        })
-    });
-  $( "form" ).submit(function( event ) {
-    event.preventDefault();
-    entry = {'name':$('#name').val(),
-             'email':$('#email').val(),
-             'partner_name':$('#partner_name').val(),
-             'partner_email':$('#partner_email').val(),
-             'address':$('#address').val(),
-             'question_veggie': $('input[name=question_veggie]:checked', 'form').val(),
-             'question_statistics': $('input[name=question_statistics]:checked', 'form').val(),
-             'question_drinks': $('input[name=question_drinks]:checked', 'form').val(),
-             'question_music': $('input[name=question_music]:checked', 'form').val(),
-             'suggestions':$('#suggestions').val()
-           }
-    console.log(entry)
+		#main_content_FR{
+			display:none;
+		}
+		.fiets_foto{
+			display:block;
+    		max-width: 100%;  
+    		max-height: 100%;
+    		margin-left: auto;
+    		margin-right: auto;
+    		margin-top:1em;
+		}
+		
+	</style>
 
-    $.ajax({
-      data :entry,
-      contentType : 'application/x-www-form-urlencoded',
-      type:'post',
-      url: 'http://128.199.53.35:5000/store_results',
-      success: function(return_string){
-        if(return_string == 'success'){
-          $('#question_form').hide(duration = 0, complete = function(){
-            $('#thank_you').show(duration = 0)
-          })
-        }else{
-          $('#question_form').hide(duration = 0, complete = function(){
-            $('#something_wrong').show(duration = 0)
-          })
-        }
-      }
-    })
-  });
-  </script>
+</head>
+
+<body>
+
+<div id="screen">
+	<img src="GIF/uitnodiging_red.gif" id="opening_gif">
+	<div id="div_language_buttons" >
+		<span class="button h1" id="NL_button">NL</span>
+<!-- 		<span class="language_button h1" id="FR_button">FR</span>
+ -->	</div>
+
+	<div class ="container" id="main_content_NL">
+		<div class="row">
+			<h1 class="col-xs-12">We verwelkomen jullie graag op ons trouwfeest!</h1>
+			<div class="col-xs-12 col-sm-4">
+				<h2 class="button" id="button_NL_locatie">Locatie</h2>
+					<div id="tekst_locatie">
+						<p>
+							Jullie vinden ons in het park "de la Rocq": <br>
+							<br>
+							Pavillion du Congo<br>
+							Hameau de la Rocq<br>
+							7181 Arquennes<br>
+							Google maps: 50°34'38.7"N 4°15'26.2"E<br>
+						</p>
+					</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<h2 class="button" id="button_NL_overnachting">Overnachting</h2>
+					<div id="tekst_overnachting">
+						<p>
+							Suggesties voor overnachting:<br>
+							<br>
+							Hotel Nivelles - Sud<br>
+							Adres: Chaussée de Mons 22, 1400 Nivelles<br>
+							Tel: 067 21 87 21<br>
+							<br>
+							Le Manoir du Capitaine<br>
+							Adres: Chemin de Boulouffe 1, 7181 Arquennes<br>
+							Tel: 067 87 45 40<br>
+						</p>
+					</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<h2 class="button" id="button_NL_cadeautip">Cadeautip</h2>
+					<div id="tekst_cadeautip">
+						<p>
+							Jullie aanwezigheid is ons grootste cadeau.<br>
+							<br>
+							Voor onze fietsreizen verder te realiseren:<br>
+							BE29 7343 1712 7664<br>
+						</p>
+					</div>
+			</div>
+
+			<div id="fietsfoto" class="col-xs-12">
+				<img src="Pictures/IMG_0124.JPG" class="fiets_foto">
+			</div>
+<!-- 			<div id="tekst" class="col-xs-12 col-sm-8">
+				<h2>Locatie</h2>
+				<p>
+					Pavillion du Congo<br>
+					Hameau de la Rocq<br>
+					7181 Arquennes<br>
+					Google maps: 50°34'38.7"N 4°15'26.2"E<br>
+				</p>
+				<h2>Overnachting</h2>
+				<h2>Cadeautip</h2>
+				<p>
+					Jullie aanwezigheid is het mooiste cadeau.
+				</p>
+				<p>
+					Om onze verdere fietsreizen te realiseren:<br>
+					BE29 7343 1712 7664
+				</p>
+			</div> -->
+		</div>
+	</div>	
+	<div class ="container" id="main_content_FR">
+		<div class="row">
+			<div id="fietsfoto" class="col-xs-4">
+				<img src="Pictures/IMG_0124.JPG" class="fiets_foto">
+			</div>
+			<div id="tekst" class="col-xs-8">	
+				<h1>Adresse</h1>
+				<h1>Logement</h1>
+				<h1>Idée cadeau</h1>
+			</div>
+		</div>
+	</div>	
+</div>
+</body>
+
+<script>
+	setTimeout(function() {
+
+		$('#div_language_buttons').show()
+
+  		$("#FR_button").click(function(){
+  			$('#div_language_buttons').hide()
+  			$('#opening_gif').hide()
+  			$('#main_content_FR').show()
+  		})
+		$("#NL_button").click(function(){
+			$('#div_language_buttons').hide()
+			$('#opening_gif').hide()
+			$('#main_content_NL').show()
+		})
+		$("#button_NL_locatie").click(function(){
+			$('#tekst_locatie').show()
+			$('#tekst_overnachting').hide()
+			$('#tekst_cadeautip').hide()
+		})
+		$("#button_NL_overnachting").click(function(){
+			$('#tekst_locatie').hide()
+			$('#tekst_overnachting').show()
+			$('#tekst_cadeautip').hide()
+		})
+		$("#button_NL_cadeautip").click(function(){
+			$('#tekst_locatie').hide()
+			$('#tekst_overnachting').hide()
+			$('#tekst_cadeautip').show()
+		})
+
+		
+
+	}, 500);
+
+
+</script>
+
 </html>
