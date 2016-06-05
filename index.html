@@ -30,8 +30,7 @@
 		}
 		#screen{
 			height:100vh;
-/*			background-color: red;
-*/		}
+		}
 		#opening_gif{
 			display:block;
     		max-width: 100%;  
@@ -45,9 +44,11 @@
 			right:5vw;
 			top:5vh;
 		}
-		.language_button{
-			margin:10px;
-			color:#1C445A;
+    #div_language_buttons .language_button{
+      margin:20px;
+    }
+		.button{
+			margin-bottom:20px;
 		}
 		.button:hover{
     		text-decoration: underline;
@@ -57,12 +58,11 @@
 			display:none;
 		}
 			#main_content_NL h1{
-				text-align: center;
 				margin-bottom: 1em;
+        font-size:3em;
         font-weight: 500;
 			}
 			#main_content_NL h2{
-				text-align: center;
 				margin-bottom: 1em;
         font-weight: 400;
 			}
@@ -79,6 +79,24 @@
 		#main_content_FR{
 			display:none;
 		}
+      #main_content_FR h1{
+        margin-bottom: 1em;
+        font-size:3em;
+        font-weight: 500;
+      }
+      #main_content_FR h2{
+        margin-bottom: 1em;
+        font-weight: 400;
+      }
+      #main_content_FR #tekst_FR_locatie{
+        display:none;
+      }
+      #main_content_FR #tekst_FR_overnachting{
+        display:none;
+      }
+      #main_content_FR #tekst_FR_cadeautip{
+        display:none;
+      }
 		.fiets_foto{
 			display:block;
     		max-width: 100%;  
@@ -118,10 +136,10 @@
 
 	
 	<div id="div_language_buttons" >
-		<span class="button h1" id="NL_button">NL</span>
-<!-- 		<span class="language_button h1" id="FR_button">FR</span>
- -->	</div>
-
+		<span class="language_button button h1" id="NL_button">NL</span>
+		<span class="language_button button h1" id="FR_button">FR</span>
+  </div>
+  <!-- Nederlands deel -->
 	<div class ="container" id="main_content_NL">
 		<div class="row">
 			<h1 class="col-xs-12">We verwelkomen jullie graag op ons trouwfeest!</h1>
@@ -158,10 +176,10 @@
 				<h2 class="button" id="button_NL_cadeautip">Cadeautip</h2>
 					<div id="tekst_cadeautip">
 						<p>
-							Jullie aanwezigheid is ons grootste cadeau.<br>
+							Jullie aanwezigheid is ons grootste geschenk.<br>
 							<br>
-							Om onze fietsreizen verder te helpen realiseren kunnen jullie een bijdrage storten op:<br>
-							BE29 7343 1712 7664<br>
+							Indien jullie ons graag helpen toekomstige fietsreizen te realiseren BE62 0017 3627 7061<br>
+              Dank u!
 						</p>
 					</div>
 			</div>
@@ -169,38 +187,58 @@
 			<div id="fietsfoto" class="col-xs-12">
 				<img src="Pictures/IMG_0124.JPG" class="fiets_foto">
 			</div>
-<!-- 			<div id="tekst" class="col-xs-12 col-sm-8">
-				<h2>Locatie</h2>
-				<p>
-					Pavillion du Congo<br>
-					Hameau de la Rocq<br>
-					7181 Arquennes<br>
-					Google maps: 50°34'38.7"N 4°15'26.2"E<br>
-				</p>
-				<h2>Overnachting</h2>
-				<h2>Cadeautip</h2>
-				<p>
-					Jullie aanwezigheid is het mooiste cadeau.
-				</p>
-				<p>
-					Om onze verdere fietsreizen te realiseren:<br>
-					BE29 7343 1712 7664
-				</p>
-			</div> -->
 		</div>
 	</div>	
-	<div class ="container" id="main_content_FR">
-		<div class="row">
-			<div id="fietsfoto" class="col-xs-4">
-				<img src="Pictures/IMG_0124.JPG" class="fiets_foto">
-			</div>
-			<div id="tekst" class="col-xs-8">	
-				<h1>Adresse</h1>
-				<h1>Logement</h1>
-				<h1>Idée cadeau</h1>
-			</div>
-		</div>
-	</div>	
+  <!-- Frans deel -->
+  <div class ="container" id="main_content_FR">
+    <div class="row">
+      <h1 class="col-xs-12">Bienvenue à notre mariage!</h1>
+      <div class="col-xs-12 col-sm-4">
+        <h2 class="button" id="button_FR_locatie">Lieu</h2>
+          <div id="tekst_FR_locatie">
+            <p>
+              Le mariage aura lieu dans le parc "de la Rocq": <br>
+              <br>
+              Pavillion du Congo<br>
+              Hameau de la Rocq<br>
+              7181 Arquennes<br>
+              Google maps: 50°34'38.7"N 4°15'26.2"E<br>
+            </p>
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <h2 class="button" id="button_FR_overnachting">Logement</h2>
+          <div id="tekst_FR_overnachting">
+            <p>
+              Suggestions pour se loger:<br>
+              <br>
+              Hotel Nivelles - Sud<br>
+              Adresse: Chaussée de Mons 22, 1400 Nivelles<br>
+              Tel: 067 21 87 21<br>
+              <br>
+              Le Manoir du Capitaine<br>
+              Adresse: Chemin de Boulouffe 1, 7181 Arquennes<br>
+              Tel: 067 87 45 40<br>
+            </p>
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <h2 class="button" id="button_FR_cadeautip">Idée cadeau</h2>
+          <div id="tekst_FR_cadeautip">
+            <p>
+              Votre présence est notre plus beau cadeau.<br>
+              <br>
+              Si toutefois vous désirez nous aider à réaliser de nouveaux voyages à vélo: BE62 0017 3627 7061.<br>
+              Merci!
+            </p>
+          </div>
+      </div>
+
+      <div id="fietsfoto" class="col-xs-12">
+        <img src="Pictures/IMG_0124.JPG" class="fiets_foto">
+      </div>
+    </div>
+  </div>	
 </div>
 </body>
 
@@ -217,27 +255,47 @@
       			$('#opening_gif').hide()
       			$('#main_content_FR').show()
       		})
-    		$("#NL_button").click(function(){
-    			$('#div_language_buttons').hide()
-    			$('#opening_gif').hide()
-    			$('#main_content_NL').show()
-    		})
-    		$("#button_NL_locatie").click(function(){
-    			$('#tekst_locatie').show()
-    			$('#tekst_overnachting').hide()
-    			$('#tekst_cadeautip').hide()
-    		})
-    		$("#button_NL_overnachting").click(function(){
-    			$('#tekst_locatie').hide()
-    			$('#tekst_overnachting').show()
-    			$('#tekst_cadeautip').hide()
-    		})
-    		$("#button_NL_cadeautip").click(function(){
-    			$('#tekst_locatie').hide()
-    			$('#tekst_overnachting').hide()
-    			$('#tekst_cadeautip').show()
-    		})
-	   }, 5000);
+      		$("#NL_button").click(function(){
+      			$('#div_language_buttons').hide()
+      			$('#opening_gif').hide()
+      			$('#main_content_NL').show()
+      		})
+      		$("#button_NL_locatie").click(function(){
+      			$('#tekst_locatie').show()
+      			$('#tekst_overnachting').hide()
+      			$('#tekst_cadeautip').hide()
+      		})
+      		$("#button_NL_overnachting").click(function(){
+      			$('#tekst_locatie').hide()
+      			$('#tekst_overnachting').show()
+      			$('#tekst_cadeautip').hide()
+      		})
+      		$("#button_NL_cadeautip").click(function(){
+      			$('#tekst_locatie').hide()
+      			$('#tekst_overnachting').hide()
+      			$('#tekst_cadeautip').show()
+      		})
+          $("#FR_button").click(function(){
+            $('#div_language_buttons').hide()
+            $('#opening_gif').hide()
+            $('#main_content_FR').show()
+          })
+          $("#button_FR_locatie").click(function(){
+            $('#tekst_FR_locatie').show()
+            $('#tekst_FR_overnachting').hide()
+            $('#tekst_FR_cadeautip').hide()
+          })
+          $("#button_FR_overnachting").click(function(){
+            $('#tekst_FR_locatie').hide()
+            $('#tekst_FR_overnachting').show()
+            $('#tekst_FR_cadeautip').hide()
+          })
+          $("#button_FR_cadeautip").click(function(){
+            $('#tekst_FR_locatie').hide()
+            $('#tekst_FR_overnachting').hide()
+            $('#tekst_FR_cadeautip').show()
+          })
+	   }, 10000);
   });
 
 
