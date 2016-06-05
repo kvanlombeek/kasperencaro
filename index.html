@@ -15,7 +15,7 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 	<!-- Roboto font -->
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/latest/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/normalize/latest/normalize.min.css">
@@ -26,6 +26,7 @@
         	background-color:rgba(226, 187, 11,0.1);
         	font-family: 'Roboto', sans-serif;
         	font-weight: 300;
+          font-size: 1.5em;
 		}
 		#screen{
 			height:100vh;
@@ -50,6 +51,7 @@
 		}
 		.button:hover{
     		text-decoration: underline;
+        cursor:pointer;
 		}
 		#main_content_NL{
 			display:none;
@@ -57,10 +59,12 @@
 			#main_content_NL h1{
 				text-align: center;
 				margin-bottom: 1em;
+        font-weight: 500;
 			}
 			#main_content_NL h2{
 				text-align: center;
 				margin-bottom: 1em;
+        font-weight: 400;
 			}
 			#main_content_NL #tekst_locatie{
 				display:none;
@@ -106,11 +110,13 @@
 <body>
 
 <div id="screen">
-  <div id="spinning_wheel">
-    <div class="spinner"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></div>
-  </div>
+    
+    <div id="spinning_wheel">
+      <div class="spinner"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></div>
+    </div>
+<img src="GIF/uitnodiging_red.gif" id="opening_gif">
 
-	<img src="GIF/uitnodiging_red.gif" id="opening_gif">
+	
 	<div id="div_language_buttons" >
 		<span class="button h1" id="NL_button">NL</span>
 <!-- 		<span class="language_button h1" id="FR_button">FR</span>
@@ -154,7 +160,7 @@
 						<p>
 							Jullie aanwezigheid is ons grootste cadeau.<br>
 							<br>
-							Voor onze fietsreizen verder te realiseren:<br>
+							Om onze fietsreizen verder te helpen realiseren kunnen jullie een bijdrage storten op:<br>
 							BE29 7343 1712 7664<br>
 						</p>
 					</div>
